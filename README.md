@@ -147,4 +147,4 @@ Since KODA is a **header-only** library, you do not need to build any source bin
 
 ## 📜 License
 
-This project is licensed under the MIT License
+This project is licensed under the [MIT License](LICENSE).
