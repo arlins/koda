@@ -5,6 +5,8 @@
 [![Standard](https://img.shields.io/badge/C%2B%2B-14%20%7C%2017%20%7C%2020-b30047.svg)](https://en.cppreference.com/w/cpp/14)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Darwin%20%7C%20Linux%20%7C%20Android%20%7C%20HarmonyOS-lightgrey.svg)]()
 
+(Coming soon...)
+
 KODA is a header-only cross-platform C++14 (or later) infrastructure library based on the STL. It provides lightweight yet powerful components for Async Tasks, RunLoop/Event Dispatching, IPC, and SigSlot. Seamlessly supports Windows, Darwin (iOS/macOS), Linux, Android, HarmonyOS, and other Unix-like systems with zero external dependencies
 
 * **Developer:** Arlin (arlins.dps@gmail.com)
@@ -75,7 +77,7 @@ To comply with strict **OS Sandbox / Permission restrictions**, you must provide
 #include "koda/koda.h"
 
 int main() {
-    // 💡 Configuration Guidelines for OS Sandboxes:
+    // Configuration Guidelines for OS Sandboxes:
     // - Android / HarmonyOS: BOTH paths must be specified within a writable directory to avoid permission restrictions.
     // - Darwin (iOS / macOS): crossProcessDir MUST be set to a directory including the AppGroup path to work across apps.
     // - You can also specify these paths to override the default directories automatically defined by KODA.
@@ -111,7 +113,7 @@ To inspect synchronization and concurrency issues early during development, defi
 
 Since KODA is a **header-only** library, you do not need to build any source binaries. Simply include the `koda/koda.h` umbrella header and link against your target platform's native system libraries (both static and dynamic linking are fully supported without restriction):
 
-### 🪟 Windows
+### 💻 Windows
 
 * `kernel32.lib`
 * `user32.lib`
