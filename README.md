@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Standard](https://img.shields.io/badge/C%2B%2B-14%20%7C%2017%20%7C%2020-b30047.svg)](https://en.cppreference.com/w/cpp/14)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Darwin%20%7C%20Linux%20%7C%20Android%20%7C%20HarmonyOS-lightgrey.svg)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Darwin%20%7C%20Linux%20%7C%20Android%20%7C%20HarmonyOS%20%7C%20Unix-lightgrey.svg)]()
 
 KODA is a header-only cross-platform C++14 (or later) infrastructure library based on the STL. It provides lightweight yet powerful components for Async Tasks, RunLoop/Event Dispatching, IPC, and SigSlot. Seamlessly supports Windows, Darwin (iOS/macOS), Linux, Android, HarmonyOS, and other Unix-like systems with zero external dependencies
 
