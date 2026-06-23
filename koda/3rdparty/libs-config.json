@@ -1,0 +1,35 @@
+[
+	{
+		"url": "https://github.com/gulrak/filesystem",
+		"files": {
+			"include/ghc/*": "ghc/",
+			"LICENSE": "ghc/docs/LICENSE",
+			"README.md": "ghc/docs/README.md"
+		}
+	},
+	{
+		"url": "https://github.com/nonstd-lite/any-lite@0.3.0",
+		"files": {
+			"include/nonstd/*": "nonstd/",
+			"LICENSE": "nonstd/docs/LICENSE"
+		}
+	},
+	{
+		"url": "https://github.com/nonstd-lite/optional-lite/archive/refs/heads/master.zip",
+		"files": {
+			"include/nonstd/": "nonstd/"
+		}
+	},
+	{
+		"url": "https://github.com/nonstd-lite/variant-lite",
+		"files": {
+			"include/nonstd/": "nonstd/"
+		}
+	},
+	{
+		"url": "https://github.com/nonstd-lite/string-view-lite",
+		"files": {
+			"include/nonstd/": "nonstd/"
+		}
+	}
+]
