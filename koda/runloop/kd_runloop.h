@@ -548,12 +548,16 @@ public:
 protected:
 	EventLoop() = default;
 	void _init(RLLooperCreator nativeLooperCreator) {
-		KD_ASSERT_M(nativeLooperCreator == nullptr,
-			"EventLoop does not need looper creator in event mode");
-
 		m_runLoopThreadId = std::this_thread::get_id();
 		m_weakSelf = std::weak_ptr<EventLoop>(shared_from_this());
 		m_nativeLooperCreator = std::move(nativeLooperCreator);
+        
+        auto ctx = RunLoop::getRunLoopContext(m_runLoopThreadId);
+        if( ctx->m_mode == RLMode::Event ) {
+            KD_ASSERT_M(nativeLooperCreator == nullptr,
+                "EventLoop does not need looper creator in event mode");
+        }
+        
 		_addEventLoop(m_runLoopThreadId, shared_from_this());
 	}
 
